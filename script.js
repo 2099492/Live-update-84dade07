@@ -27,5 +27,10 @@ function je_tante() {
   document.getElementById("text").innerHTML = antwoord;
 }
 
-var tijd = new Date();
-document.getElementById("datetime").innerHTML = tijd.toLocaleTimeString();
+function showTime(){
+  var tijd = new Date();
+  document.getElementById("datetime").innerHTML = tijd.toLocaleTimeString();
+}
+
+
+setInterval(showTime(), 1000);
